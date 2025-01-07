@@ -26,7 +26,7 @@ const Home = () => {
 					<div className="d-flex align-items-center form-control" style={{borderBottom:"1px solid #e3e3e3", backgroundColor:"white"}}
 						onMouseEnter={() =>{ setHidden(false); console.log("mouse enter") }}
 						onMouseLeave={()=>{ setHidden(true); console.log("mouse leave")	}}>	
-							<p className="p-3 col-11" style={{marginBottom:"0"}} key={task}>{task}</p>
+							<p className="p-3 col-11 fs-3 fw-light text-start" style={{marginBottom:"0"}} key={task}>{task}</p>
 							{hidden ? null : 
 								<i className="col-1 fa-duotone fa-solid fa-xmark" onClick={()=>{
 									setPendingTask([...pendingTask].filter((value)=> value !== task))
