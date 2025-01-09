@@ -41,7 +41,7 @@ const Home = () => {
 				 value={newTask} />
 				{pendingTask.map(task => <Task key={task} task={task} />)}
 					<div className="form-control text-body-tertiary" style={{backgroundColor:"white"}}>
-						<p className="text-start" style={{marginBottom:"0", fontSize:"12px"}}>{(pendingTask.length) == 0 ? "No hay tareas, añadir tareas" : (pendingTask.length)+"item left"}</p>
+						<p className="text-start" style={{marginBottom:"0", fontSize:"12px"}}>{(pendingTask.length) == 0 ? "No hay tareas, añadir tareas" : (pendingTask.length)+" item left"}</p>
 					</div>
 			</div>
 			
